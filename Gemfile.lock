@@ -13,6 +13,7 @@ GEM
     builder (3.2.3)
     childprocess (1.0.1)
       rake (< 13.0)
+    concurrent-ruby (1.1.5)
     cucumber (3.1.2)
       builder (>= 2.1.2)
       cucumber-core (~> 3.2.0)
@@ -73,10 +74,11 @@ PLATFORMS
 
 DEPENDENCIES
   appium_lib
+  concurrent-ruby
   cucumber
   nokogiri (>= 1.10.4)
   rspec-expectations
   rubocop
 
 BUNDLED WITH
-   1.17.1
+   1.17.3

@@ -1,6 +1,6 @@
 require './features/modules/base_keyboard'
 # contains all application's keyboard elements
-class Keyboard
+class Keyboard < BaseKeyboard
   def initialize(driver)
     @driver = driver
   end

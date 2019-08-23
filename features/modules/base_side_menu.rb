@@ -19,6 +19,16 @@ class BaseSideMenu
     end
   end
 
+  def select_category_up(name)
+    find_category(name)
+    side_menu_sections.each do |section|
+      if section.text == name
+        section.click
+        break
+      end
+    end
+  end
+
   def side_menu_sections_texts
     text = []
     side_menu_sections.each do |section|
